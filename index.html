@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script/js.js"></script>
+</head>
+<body>
+    <div class="bg">
+            <p>Login To Your Account / Register New</p>
+        <img src="./img/background.png" alt="">
+        <div class="main_block">
+            <div class="main_block_title">
+                <div class="circle_pen">
+                    <img src="img/pen.png" alt="">
+                </div>
+                <p>Login To Your Account / Register New</p>
+            </div>
+            <div class="block_form">
+                <div class="sign_in_form" id="in_form">
+
+
+                    <div class="title"><div class="title1"><p>/</p></div></div>
+                    <form class="myform1" method="POST" action="php/bdlog.php">
+                        <div class="form-group">
+                            <input type="text" class="form-contro_login_in user_name" id="login_in" name="login_in" placeholder="User Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-contro_password_in password" id="password_in" name="password_in" placeholder="Password">
+                        </div>
+                        <div class="text-center custom_checkbox">
+                            <input type="checkbox" id="remember" name="remember" >
+                            <label class="remember_before" for="remember"><i></i></label>
+                            <label for="remember">Remember My password</label>
+                            <div class="rememder_hover">
+                                <p>You no longer need to enter
+                                    a password every time you use the site</p>
+                            </div>
+                        </div>
+                        <button type="button" id="login" class="btn button_login" name="Submit">Login</button>
+
+                    </form>
+                </div>
+                <div class="sign_in_form" id="up_form">
+                    <form class="myform2" method="POST" action="php/bdreg.php" >
+                        <p class="title_reg">Register</p>
+                        <div class="form-group">
+                            <label for="email_up" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control email" id="email_up" name="email_reg">
+                            <label class="before email_up_before" for="email_up">!</label>
+                            <label class="after email_up_after" for="email_up"><i></i></label>
+                        </div>
+                        <div class="form-group form-group1">
+                            <label for="user_name_up" class="col-form-label">User Name:</label>
+                            <input type="text" class="form-control user_name" id="user_name_up" name="name_reg">
+                            <label class="before user_name_up_before" for="user_name_up">!</label>
+                            <label class="after user_name_up_after" for="user_name_up"><i></i></label>
+                        </div>
+                        <div class="form-group form-group1">
+                            <label for="password_up" class="col-form-label">Password:</label>
+                            <input type="text" class="form-control password" id="password_up" name="password_reg">
+                            <label class="before password_up_before" for="password_up">!</label>
+                            <label class="after password_up_after" for="password_up"><i></i></label>
+                        </div>
+                        <div class="button_reg">
+                            <button type="button" id="sign_up" class="btn button_sign_in" name="Submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
